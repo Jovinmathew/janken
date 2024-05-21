@@ -11,13 +11,13 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == 'paper' && computerChoice == 'rock' || humanChoice == 'scissor' && computerChoice == 'paper' || humanChoice == 'rock' && computerChoice == 'scissor') {
-        console.log('You win', humanChoice, 'beats', computerChoice);
+        console.log('You win:', humanChoice, 'beats', computerChoice);
     }
     else if (humanChoice == computerChoice) {
         console.log("It's a draw");
     }
     else {
-        console.log('You lose', computerChoice, 'beats', humanChoice);
+        console.log('You lose:', computerChoice, 'beats', humanChoice);
     }
 }
 playRound(getHumanChoice(), getComputerChoice());
